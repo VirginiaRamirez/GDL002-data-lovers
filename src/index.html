@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1,maximum-scale=1, minimum-scale=1">
     <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fontello.css"
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <script src="./data/pokemon/pokemon.js"></script>
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-              <header>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link rel="stylesheet" href="fontello.css">
+    <header>
         <div class="contenedor">
-            <img src="poke2-02.png" align="left" width="45" height="45"/> 
+            <img src="poke2-02.png" align="left" width="70" height="70"/> 
             <h1><img src="Group.png"width="190" height="50"></h1>
             <input type="checkbox" id="barraMenu">
             <label class="icon-menu" for="barraMenu"></label>
             <nav class="menu">
-            <a href="https://youtu.be/rhzwxi3kIh4">Como se juega?</a>
-            <a href="">Filtrar</a>
-            <a href="">Ordenar</a>
-            <a href="">¿Quieres saber más?</a>
+            <a href="https://youtu.be/AV6p4Fq9BKY" target="_blank">¿Cómo se juega?</a>
             </nav>
+        </div>
+</head>
+
+<body>
+        <br><select id='type-select'>
+                <option>Tipos de Pokemon</option>
+                </select>
+    <div id="root">
             
-                          </div>
-                          <div id='type-buttons'></div>
-                          <div id="showTypes"> </div>
-      </header>
-      </body>
+    </div>
+    <div id="showTypes"> </div>
+        <script src="./data/pokemon/pokemon.js"></script>
+        <script src="data.js"></script>
+        <script src="main.js"></script>
+</body>
+
 </html>
