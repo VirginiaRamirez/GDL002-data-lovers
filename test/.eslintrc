@@ -1,6 +1,18 @@
 {
   "env": {
-    "node": true,
-    "jest": true
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "extends": "eslint:recommended",
+  "globals": {
+    "cipher": false,
+    "dataLovers": false,
+    "POKEMON": false
+  },
+  "rules": {
+    "no-console": 0,
+    "semi": 2
   }
 }

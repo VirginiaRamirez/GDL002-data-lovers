@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-        <link rel="stylesheet" href="fontello.css">
-    <header>
-        <div class="contenedor">
-            <img src="poke2-02.png" align="left" width="70" height="70"/> 
-            <h1><img src="Group.png"width="190" height="50"></h1>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"/>
+
+    <header id="header" style="display:none" hidden>
+        <div id="imagenes" class="contenedor" style="display:none" hidden>
+            <img src="poke2-02.png" alt="poke2-02"/>
+            <img src="Group.png" alt="Group">
             <input type="checkbox" id="barraMenu">
             <label class="icon-menu" for="barraMenu"></label>
-            <nav class="menu">
-            <a href="https://youtu.be/AV6p4Fq9BKY" target="_blank">¿Cómo se juega?</a>
-            </nav>
+            
         </div>
+    </header>
 </head>
 
 <body>
-        <br><select id='type-select'>
-                <option>Tipos de Pokemon</option>
-                </select>
-    <div id="root">
-            
+      <main>
+          <section id="contenido"> 
+          <div id="inicio" >
+                <h2>Bienvenidas a pokéWHAT</h2>
+                <nav class="menu" style="display:none" hidden>
+                        <a href="https://youtu.be/AV6p4Fq9BKY" target="_blank">¿Cómo se juega?</a>
+                        </nav>
+                <button type="button" id="botonInicio">Continuar</button><br>
+                <img src="https://es.pokemongohub.net/wp-content/uploads/2019/02/img_9146.jpg" id="imagenInicio" alt="alt">
+           </div></section></main>
+    <select id="type-select" style="display:none" hidden>
+        <option id="type-pokemon" selected disabled>Tipos de Pokemon</option>
+    </select>
+    <select id="sort-by" style="display:none" hidden>
+        <option id="sort-pokemon" selected disabled>Ordenar</option>
+        <option value="a-Z">Alfabético A-Z</option>
+        <option value="Z-a">Alfabético Z-A</option>
+        <option value="001-151">Número 001-151</option>
+        <option value="151-001">Número 151-001</option>
+    </select>
+    <div id="root" style="display:none" hidden>
+
     </div>
-    <div id="showTypes"> </div>
-        <script src="./data/pokemon/pokemon.js"></script>
-        <script src="data.js"></script>
-        <script src="main.js"></script>
+    <div id="show-types"> </div>
+    
+    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
