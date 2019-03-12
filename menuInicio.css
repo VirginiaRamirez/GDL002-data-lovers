@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #22a568;
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-size-adjust: auto;
+    
+}
+img {
+    width: 100%;
+    height: 100%;
+  }
+
+#botonInicio {
+    position: center;
+    top: 90%;
+    right: 45%;
+    text-align: center;
+    width: 40%;
+    height: 5%;
+    text-align: center;
+    justify-content: center;
+    background-color: #FDD32A;
+    border: transparent;
+    border-radius: 10px;
+    color: orangered;
+    font-size: 20px;
+    font-family: "Dosis", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-size-adjust: auto;
+  }
+
+
+style css 
+
+body {
+  background: #fff;
+}
+
+button {
+  border: 2px solid black;
+  height: 30px;
+  width: 120px;
+  margin: 0 auto;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1s; 
+  animation-delay: 1;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transition: linear-gradient(to top, #6d8aa0, #8ba2b4);
+    border-radius: 100%;
+  }
+  100% {
+    transition: linear-gradient(to top, #6d8aa0, #8ba2b4);
+  }
+}
+body {
+    background: #F7B71E;
+    font-family: 'Dosis', sans-serif;
+    
+    }
+    #root{
+      height: auto;
+      align-content: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row;
+      flex: 1 0 12em;
+  
+    
+    }
+   
+    .poke-box {
+      width: 35%;
+      height: 240px;
+      flex-basis: 5%;
+      padding: 50px;
+      margin: 5px;
+      background: #FDD32A;
+      /* -webkit-box-shadow: -1px 0px 58px 12px rgba(112,112,112,0.08);
+      -moz-box-shadow: -1px 0px 58px 12px rgba(112,112,112,0.08);
+      box-shadow: -1px 0px 58px 12px rgba(112,112,112,0.08); */
+      -webkit-box-shadow: -1px 0px 58px 12px rgba(218, 100, 45, 0.08);
+      -moz-box-shadow: -1px 0px 58px 12px rgba(218, 100, 45, 0.08);
+      box-shadow: -1px 0px 58px 12px rgba(218, 100, 45, 0.08);
+      display: flex;
+      text-align:center;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      border-color: transparent;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+      font-family: 'Archivo Narrow', sans-serif;
+      font-size: 100%;
+      color: #FBFBFB;
+      justify-content: space-around;
+      min-width: 10%;
+      width: calc((35em - 100%) * 1000);
+      max-width: 35%;
+  
+      }
+    .poke-box #poke-name{
+      color: #4286f4;
+    }
+    h1{
+        float: left;
+    }
+    
+    
+    h2{
+        text-align: center;
+        
+    }
+    
+    header{
+      position: relative;       
+        width: 100%;
+        height: 70px;
+        background: rgba(69, 209, 104, 0.794);
+        background: #333;
+        color:#fff;
+
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    #contenido{
+      width: 100%;
+      height: 100%;
+  }
+    .section{
+    width: 100%;
+  }
+    
+    .contenedor{
+        width: 98%;
+        margin: auto;
+    }
+    #barraMenu{
+        display:none;
+    }
+    
+    header label{
+        cursor: pointer;
+        float: right;
+        font-size: 28px;
+        margin: 6px 0;
+        
+    }
+    
+    .menu{
+        
+        position: absolute;
+        width: 50%;
+        height: 7vh;
+        background: rgba(51,51,51,0.9);
+        top: 70px;
+        left: 0;
+      
+    }
+    
+   
+    
+    .menu a{
+        display: block;
+        color: #fff;
+        height: 10px;
+        text-decoration: none;
+        padding: 15px;
+        border-bottom: 1px solid rgba(105, 39, 39, 0.3);
+    }
+    
+    .menu a:hover{
+        background: rgba(255,255,255,0.3);
+    }
+    
+    header .contenedor{
+        display: table;
+    }
+    
+    .poke-img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-self: center
+    
+    }
+    
+    .poke-box #text-footer {
+      width: 100%;
+      height: 100%;
+      background-color:rgba(253, 211, 42, 0.9);
+      /*background:#FDD32A;*/
+      top: 100%;
+      left: 0;
+      transition: top .5s ease;
+      text-align:center;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+      justify-content: space-around;
+    
+    }
+    
+    .poke-box:hover #text-footer {
+      top: 0%;
+    }
+    .wrap-text {
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      
+      
+    }
+    
+    .wrap-text p {
+      font-size: 10px;
+      color: #FBFBFB;
+      font-family: 'Dosis', sans-serif;
+    }
+    
+    .wrap-text #att {
+      font-size: 15px;
+      color: #FBFBFB;
+      font-family: 'Dosis', sans-serif;
+      
+    }
+    #poke-type {
+      color: #FF8300;
+      font-size: 100%;
+      font-family: 'Dosis', sans-serif;
+    }
+    
+    #poke-num, #poke-name {
+      color: white;
+      font-size: 100%;
+      font-family: 'Dosis', sans-serif;
+    }
+    
+     @media (min-width:1024px) {
+          .menu{
+              position: static;
+              width: auto;
+              height: auto;
+              transform: translateX(0%);
+              float: right;
+              display: flex;
+          }
+          .menu a{
+              border: none;
+          }
+          header label {
+              display: none;
+          }
+          .contenedor{
+              width: 1000px;
+          }
+          #root{
+            padding: 1%;
+        }
+        .poke-Box {
+          width: 28%;
+  }
+      }
+    
+      @media (min-width: 300px) {
+        .poke-Box {
+            width: 28%;
+    }
+    .poke-img {
+        width: 130px;
+        height: 130px;
+    }
+   
+
+    #root{
+        padding: 2%;
+    
+    }
+   
+  }
+    
+    
+      @media (min-width: 600px) {
+        .poke-Box {
+            width: 18%;
+        }
+        #root{
+            padding: 1%;
+    
+      }
+    }

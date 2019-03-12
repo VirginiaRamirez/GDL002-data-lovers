@@ -1,13 +1,3 @@
-const pantallaInicio =()=>{
-    document.getElementById ("inicio").style.display="none";
-    document.getElementById ("root").style.display="flex";
-    document.getElementById ("header").style.display="flex";
-    document.getElementById ("type-select").style.display="flex";
-    document.getElementById ("sort-by").style.display="flex";
-    document.getElementById ("imagenes").style.display="flex";
-    
-  };
-  document.getElementById("botonInicio").addEventListener("click", pantallaInicio);
 
 //Data 
 const pokeData = window.POKEMON.pokemon;
@@ -20,23 +10,18 @@ function showAllPokemons(pokemon) {
     /*  Retorna un div que contiene la imagen, número,
         nombre y tipo de Pokemon */    
         return `
-        <div class="poke-box">
-            <p id=poke-num>${pokemon.num}<span id="poke-name"> ${pokemon.name}</span></p>
-            <img class="poke-img" src="${pokemon.img}">
-            <p id=poke-type>${pokemon.type.join(", ")}</span></p>
-            <div class="wrap-text" id="text-footer">
-                <class="poke-weight">Peso: <span id="att">${pokemon.weight}</span><br>
-                <class="poke-height">Altura: <span id="att">${pokemon.height}</span><br>
-                <class="poke-egg">Huevo: <span id="att">${pokemon.egg}</span><br>
-                <class="poke-candy_count">Conteo de caramelos: <span id="att">${pokemon.candy_count}</span><br>
-                <class="poke-candy">Caramelo: <span id="att">${pokemon.candy}</span><br>
-                <class="poke-height">Posibilidad de engendro: <span id="att">${pokemon.spawn_chance}</span><br>
-                
-                <class="poke-height">Tiempo de engendro: <span id="att">${pokemon.spawn_time}</span><br>
-                <class="poke-height">Multiplicadores: <span id="att">${pokemon.multipliers}</span><br>
-                <class="poke-weak">Debilidades:<br> <span id="att">${pokemon.weaknesses.join(", ")}</span><br>
-            </div>
-        </div>
+        <section class="poke-box">
+        <p id=poke-num>${pokemon.num}<span id="poke-name"> ${pokemon.name}</span></p>    
+        <img class="poke-img" src="${pokemon.img}">
+        <p id=poke-type>${pokemon.type.join("\u00A0\u00A0\u00A0\u00A0")}</span></p>
+        <section class="wrap-text" id="text-footer">
+            <class="poke-weight">Weight: <span id="weight"=>${pokemon.weight} </span><br> Height: <class="poke-height"><span id="height">${pokemon.height}</span><br>
+            <class="poke-egg">Egg: <span id=egg>${pokemon.egg}</span><br>
+            <class="candy">Candy: <span id=poke-candy>${pokemon.candy}</span><br>
+            <class="candy-count">Candy count: <span id=poke-candy>${pokemon.candy_count}</span><br>
+            <class="poke-weak">Weaknesses:<br> <span id="poke-we">${pokemon.weaknesses.join("\u00A0\u00A0")}</span><br>
+            </section>
+        </section>
         `;
     }
 
@@ -78,20 +63,16 @@ function pokeTemplate (filtered){
     root.innerHTML = '';
    filtered.forEach(pokemon => {
        result = root.innerHTML +=`
-            <div class="poke-box">
-            <p id=poke-num>${pokemon.num}<span id="poke-name"> ${pokemon.name}</span></p>
-            <img class="poke-img" src="${pokemon.img}">
-            <p id=poke-type>${pokemon.type.join(", ")}</span></p>
-            <div class="wrap-text" id="text-footer">
-                <class="poke-weight">Peso: <span id="att">${pokemon.weight}</span><br>
-                <class="poke-height">Altura: <span id="att">${pokemon.height}</span><br>
-                <class="poke-egg">Huevo: <span id="att">${pokemon.egg}</span><br>
-                <class="poke-candy_count">Conteo de caramelos: <span id="att">${pokemon.candy_count}</span><br>
-                <class="poke-candy">Caramelo: <span id="att">${pokemon.candy}</span><br>
-                <class="poke-height">Posibilidad de engendro: <span id="att">${pokemon.spawn_chance}</span><br>
-                <class="poke-height">Tiempo de engendro: <span id="att">${pokemon.spawn_time}</span><br>
-                <class="poke-height">Multiplicadores: <span id="att">${pokemon.multipliers}</span><br>
-                <class="poke-weak">Debilidades:<br> <span id="att">${pokemon.weaknesses.join(", ")}</span><br>
+            <section| class="poke-box">
+            <p id=poke-num>${pokemon.num}<span id="poke-name"> ${pokemon.name}</span></p>    
+        <img class="poke-img" src="${pokemon.img}">
+        <p id=poke-type>${pokemon.type.join("\u00A0\u00A0\u00A0\u00A0")}</span></p>
+        <section class="wrap-text" id="text-footer">
+            <class="poke-weight">Weight: <span id="weight"=>${pokemon.weight} </span><br> Height: <class="poke-height"><span id="height">${pokemon.height}</span><br>
+            <class="poke-egg">Egg: <span id=egg>${pokemon.egg}</span><br>
+            <class="candy">Candy: <span id=poke-candy>${pokemon.candy}</span><br>
+            <class="candy-count">Candy count: <span id=poke-candy>${pokemon.candy_count}</span><br>
+            <class="poke-weak">Weaknesses:<br> <span id="poke-we">${pokemon.weaknesses.join("\u00A0\u00A0")}</span><br>
             `;
      });
      return result;
